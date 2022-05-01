@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [21, 2, 3, 4, 22, 45, 222, 54]
+        max = 0;
+        tem = 0;
+        for (var i = 0; i < arr.length; i++) {
+            tem = arr[i];
+            while (tem > max) {
+                max = tem;
+            }
+        }
+        console.log(max);
+        // 优解
+        var arr = [21, 2, 3, 4, 22, 45, 222, 54]
+        max = arr[0];
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]
+            }
+        }
+        console.log('数组最大值为' + max);
+        // 大于十的数字放入新数组
+        var arr = [21, 2, 3, 4, 22, 45, 222, 54]
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                newArr[newArr.length] = arr[i]
+            }
+        }
+        console.log(newArr);
+
+        function test() {
+            console.log('hahha');
+        }
+        test();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
